@@ -29,7 +29,7 @@ cents = cents % 1;
 
 console.log("Hope you hade a great experience here.");
 
-readline.question("Please rate us from 0-5 on how good I was: ");
+readline.question("Please rate us from 0-10 on how good I was: ");
 console.log("Thanks, I'll be sure to put it in my database.");
 console.log("Goodbye.");
 console.log("*************************************************");
