@@ -1,4 +1,4 @@
-//Author: FirstName LastName
+//Author: Francisco Prado
 
 /******************************************************************************
                                    sumDouble
@@ -16,9 +16,12 @@ sumDouble(2, 2) → 8
 
 
 function sumDouble(a, b) {
-
+  if(a === b){
+    return (a + b) * 2;
+  } else {
+    return a + b;
+  }
 }
-
 
 /******************************************************************************
                                    makes10
@@ -35,7 +38,11 @@ makes10(1, 9) → true
 
 
 function makes10(a, b) {
-
+  if(a === 10 || b === 10 || a + b === 10) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
@@ -55,7 +62,11 @@ parrotTrouble(false, 6) → false
 *******************************************************************************/
 
 function parrotTrouble(talking, hour) {
-
+  if(talking && (hour < 7 || hour > 20)) {
+      return true;
+  } else {
+    return false;
+  }
 }
 
 
@@ -76,7 +87,21 @@ alarmClock(0, false) → "10:00"
 *******************************************************************************/
 
 function alarmClock(day, vacation) {
+  if(day >= 1 && day <= 5) {
 
+    if(vacation === true) {
+      return "10:00";
+    } else {
+      return "7:00";
+    }
+
+  } else {
+    if(vacation === true) {
+      return "off";
+    } else {
+      return "10:00";
+    }
+  }
 }
 
 
@@ -98,7 +123,18 @@ caughtSpeeding(65, true) → 0
 *******************************************************************************/
 
 function caughtSpeeding(speed, isBirthday) {
-
+  if(isBirthday === true) {
+    speed -= 5;
+  }
+  let result = 0;
+  if(speed <= 60) {
+    result = 0;
+  } else if(speed >= 61 && speed <= 80) {
+    result = 1;
+  } else if(speed >= 81) {
+    result = 2;
+  }
+  return result;
 }
 
 /****************************************************************************
