@@ -123,7 +123,7 @@ caughtSpeeding(65, true) → 0
 *******************************************************************************/
 
 function caughtSpeeding(speed, isBirthday) {
-  if(isBirthday === true) {
+  if(isBirthday) {
     speed -= 5;
   }
   let result = 0;
@@ -131,7 +131,7 @@ function caughtSpeeding(speed, isBirthday) {
     result = 0;
   } else if(speed >= 61 && speed <= 80) {
     result = 1;
-  } else if(speed >= 81) {
+  } else {
     result = 2;
   }
   return result;
