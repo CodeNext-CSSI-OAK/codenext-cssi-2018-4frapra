@@ -147,16 +147,13 @@ function sayNumber(num) {
   } else {
     let thousandsNum = Math.floor(num / 1000);
     let thousandsStringNum = sayZeroNine(thousandsNum) + "-thousand";
-
     let hundredsNum = Math.floor((num % 1000) / 100);
     let hundredsStringNum = sayZeroNine(hundredsNum) + "-hundred";
-
     let tensNum = Math.floor((num % 100) / 10);
     let tensStringsNum = sayTwentyNinety(tensNum);
-    
     let onesNum = Math.floor(num % 10);
     let onesStringsNum = sayZeroNine(onesNum);
-
+    
     if(thousandsNum !== 0) {
       wordForm += thousandsStringNum + " ";
     }
