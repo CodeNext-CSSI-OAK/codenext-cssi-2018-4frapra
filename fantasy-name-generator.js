@@ -65,12 +65,12 @@ function getHonorific() {
 *******************************************************************************/
 
 function run() {
-  firstName = readline.question("what is your first name: ");
-  lastName = readline.question("what is your last name: ");
-  momMaidenName = readline.question("what is your mom's maiden name: ");
-  cityBorn = readline.question("which city were you born in: ");
-  dreamCar = readline.question("what is or was your dream car: ");
-  street = readline.question("enter the street you live in: ");
+  firstName = readline.question("What is your first name: ");
+  lastName = readline.question("What is your last name: ");
+  momMaidenName = readline.question("What is your mom's maiden name: ");
+  cityBorn = readline.question("Which city were you born in: ");
+  dreamCar = readline.question("What is or was your dream car: ");
+  street = readline.question("Enter the street you live in: ");
   console.log(getNewFirstName() + " " + getNewLastName() + " " + getHonorific());
 }
 
