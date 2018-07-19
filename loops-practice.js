@@ -66,17 +66,22 @@ let readline = require("readline-sync");
 //   console.log(countAs("lady gaga"));
 //   console.log(countAs(""));
 ////////////////////////////////////////////////////////////////////////////////
-function reverseString(str) {
-  let reverse = "";
-  for(let i = str.length - 1;i >= 0;i--) {
-    reverse += str.charAt(i);
-  }
-  return reverse;
-}
-console.log(reverseString("Francisco"));
-console.log(reverseString("Prado"));
-console.log(reverseString("Cuevas"));
-console.log(reverseString("happy"));
-console.log(reverseString("lady Gaga"));
-console.log(reverseString("god"));
-console.log(reverseString("dog"));
+// function reverseString(str) {
+//   let reverse = "";
+//   for(let i = str.length - 1;i >= 0;i--) {
+//     reverse += str.charAt(i);
+//   }
+//   return reverse;
+// }
+// console.log(reverseString("Francisco"));
+// console.log(reverseString("Prado"));
+// console.log(reverseString("Cuevas"));
+// console.log(reverseString("happy"));
+// console.log(reverseString("lady Gaga"));
+// console.log(reverseString("god"));
+// console.log(reverseString("dog"));
+////////////////////////////////////////////////////////////////////////////////
+// let str = "ABCDE";
+// for(let i = 0; i < str.length ; i++) {
+//   console.log(str.charAt(i));
+// }
